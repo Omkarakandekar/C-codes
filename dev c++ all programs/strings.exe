@@ -1,0 +1,35 @@
+#include <iostream>
+
+#include <string>
+
+using namespace std;
+
+ 
+
+int main(){
+
+string adS="Robert Brett Roser";
+
+char a;
+
+for(int i=0;i<adS.rfind(' '); i++){
+
+for(a=65; a<=90;a++){
+
+if(adS[i]==a ){
+
+cout<<a<<".";
+
+}
+
+}
+
+}
+
+for(int i = adS.rfind(' ')+1;i<adS.size(); i++){
+
+cout<<adS[i];
+
+}
+
+return 0;
